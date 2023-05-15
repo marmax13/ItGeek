@@ -1,6 +1,11 @@
-﻿namespace ItGeek.DAL.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace ItGeek.DAL.Entities;
+
+[Keyless]
 
 public class PostAuthor
+
 {
 	public int PostId { get; set; }
 	public int AuthorId { get; set; }
